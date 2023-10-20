@@ -79,7 +79,7 @@ class _MyAppState extends State<MyApp> {
                 ],
                 controller: userInput,
               ),
-              const Row(
+              Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
@@ -91,12 +91,12 @@ class _MyAppState extends State<MyApp> {
                           fontSize: 15,
                         ),
                       ),
-                      // Text(
-                      //   kelvin.toStringAsFixed(2),
-                      //   style: TextStyle(
-                      //     fontSize: 40,
-                      //   ),
-                      // ),
+                      Text(
+                        kelvin.toStringAsFixed(2),
+                        style: TextStyle(
+                          fontSize: 40,
+                        ),
+                      ),
                     ],
                   ),
                   Column(
@@ -118,7 +118,7 @@ class _MyAppState extends State<MyApp> {
                 ],
               ),
               TextButton(
-                onPressed: () {},
+                onPressed: konversiSuhu,
                 style: TextButton.styleFrom(
                   minimumSize: const Size.fromHeight(50),
                   backgroundColor: Colors.blue,
