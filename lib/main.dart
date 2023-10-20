@@ -107,12 +107,12 @@ class _MyAppState extends State<MyApp> {
                           fontSize: 15,
                         ),
                       ),
-                      // Text(
-                      //   reamur.toStringAsFixed(2),
-                      //   style: TextStyle(
-                      //     fontSize: 40,
-                      //   ),
-                      // ),
+                      Text(
+                        reamur.toStringAsFixed(2),
+                        style: TextStyle(
+                          fontSize: 40,
+                        ),
+                      ),
                     ],
                   )
                 ],
