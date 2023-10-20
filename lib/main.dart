@@ -85,7 +85,7 @@ class _MyAppState extends State<MyApp> {
                 children: [
                   Column(
                     children: [
-                      Text(
+                      const Text(
                         'Suhu dalam Kelvin',
                         style: TextStyle(
                           fontSize: 15,
@@ -93,7 +93,7 @@ class _MyAppState extends State<MyApp> {
                       ),
                       Text(
                         kelvin.toStringAsFixed(2),
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 40,
                         ),
                       ),
@@ -101,7 +101,7 @@ class _MyAppState extends State<MyApp> {
                   ),
                   Column(
                     children: [
-                      Text(
+                      const Text(
                         'Suhu dalam Reamur',
                         style: TextStyle(
                           fontSize: 15,
@@ -109,7 +109,7 @@ class _MyAppState extends State<MyApp> {
                       ),
                       Text(
                         reamur.toStringAsFixed(2),
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 40,
                         ),
                       ),
