@@ -13,15 +13,20 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  final userInput = TextEditingController();
+  final TextEditingController userInput = TextEditingController();
+  double kelvin = 0.0;
+  double reamur = 0.0;
 
-  // double _celcius = userInput.text ?? 0;
-  // double _kelvin = 0;
-  // double _reamur = 0;
+  void konversiSuhu() {
+    setState(() {
+      final celcius = double.tryParse(userInput.text) ?? 0.0;
+      kelvin = celcius + 273.15;
+      reamur = celcius * 0.8;
+    });
+  }
 
   @override
   void dispose() {
-    // Clean up the controller when the widget is disposed.
     userInput.dispose();
     super.dispose();
   }
@@ -86,12 +91,12 @@ class _MyAppState extends State<MyApp> {
                           fontSize: 15,
                         ),
                       ),
-                      Text(
-                        '150',
-                        style: TextStyle(
-                          fontSize: 40,
-                        ),
-                      ),
+                      // Text(
+                      //   kelvin.toStringAsFixed(2),
+                      //   style: TextStyle(
+                      //     fontSize: 40,
+                      //   ),
+                      // ),
                     ],
                   ),
                   Column(
@@ -102,12 +107,12 @@ class _MyAppState extends State<MyApp> {
                           fontSize: 15,
                         ),
                       ),
-                      Text(
-                        '150',
-                        style: TextStyle(
-                          fontSize: 40,
-                        ),
-                      ),
+                      // Text(
+                      //   reamur.toStringAsFixed(2),
+                      //   style: TextStyle(
+                      //     fontSize: 40,
+                      //   ),
+                      // ),
                     ],
                   )
                 ],
